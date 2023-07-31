@@ -1,1 +1,30 @@
 npx create-next-app@latest ./
+
+start: npm run dev: locahost:3000
+
+installation de headlessui/react
+
+je coupe le terminal ctrl + c
+je tape: npm install @headlessui/react
+Nécessaire pour utiliser combobox
+
+Quand j'ai ajouté mon appel API pour montrer la voiture, j'ai dû écrire: 
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    images: {
+        domains: ["cdn.imagin.studio"]
+    }
+}
+
+module.exports = nextConfig;
+
+Dans nextconfig.js, sinon j'avais l'erreur:
+Invalid src prop (https://cdn.imagin.studio/getimage?customer=hrjavascript-mastery&make=porsche&modelFamily=911&zoomType=fullscreen&modelYear=1994&angle=undefined) on `next/image`, hostname "cdn.imagin.studio" is not configured under images in your `next.config.js`
+See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host
+
+Attention j'ai désactivé isDisabled dans customButtonProps, vérifiez pendant l'utilisation si il ya des erreurs, en cas de problmèmes réactivez le.
+
+//samedi 35 + 40 + 50 + 50
+
+//lundi 1DW30 +  1DW 10 + 
