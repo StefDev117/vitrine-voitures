@@ -7,6 +7,8 @@
 
 # testing
 /coverage
+/global-notes.txt
+/api-notes.txt
 
 # next.js
 /.next/
@@ -33,3 +35,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
